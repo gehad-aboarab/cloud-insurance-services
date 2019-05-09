@@ -47,12 +47,5 @@ public class InsuranceWebServices {
 			@PathParam("amount") double amount) {
 		return database.renewPlan(insurance, reference_no, credit_card, amount).toString();
 	}
-	
-//	@GET
-//	@Path("payment/{credit-card}/{amount}")
-//	public JSONObject payment(@PathParam("credit-card") String credit_card, 
-//			@PathParam("amount") double amount) {
-//		return database.payment(credit_card, amount);
-//	}
 
 }
